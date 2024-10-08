@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    background: #3d3d3d;
+}
+.container {
+    margin: auto;
+    border: 2px solid #fff;
+}
+.head {
+    background: #1f1f1f;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.head p {
+    font-family: Arial, serif;
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+.head p span {
+    color: indianred;
+}
+.canvas {
+    position: relative;
+}
+.canvas.pause::before {
+    content: 'pause';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: Arial, serif;
+    color: #fff;
+}
+.canvas.game-over::before {
+    content: 'Game over!';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: Arial, serif;
+    color: #ff0000;
+}
